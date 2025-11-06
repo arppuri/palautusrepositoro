@@ -1,5 +1,6 @@
 #tehdään alussa importit
 #muutos alkuperäiseen
+#muutos klooniin 
 
 from logger import logger
 from summa import summa
