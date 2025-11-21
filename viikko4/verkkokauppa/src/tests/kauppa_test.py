@@ -136,36 +136,3 @@ class TestKauppa(unittest.TestCase):
 
         self.pankki_mock.tilisiirto.assert_called_with("pekka", ANY, "12345", ANY, 5)
 
-
-        '''
-
-           def poista_korista(self, id):
-        tuote = self._varasto.hae_tuote(id)
-        self._ostoskori.poista(tuote)
-        self._varasto.palauta_varastoon(tuote)
-    def hae_tuote(self, id):
-        tuotteet = self._saldot.keys()
-
-        for tuote in tuotteet:
-            if tuote.id == id:
-                return tuote
-
-        return None
-
-        
-    def ota_varastosta(self, tuote):
-        saldo = self.saldo(tuote.id)
-
-        self._saldot[tuote] = saldo - 1
-
-        self._kirjanpito.lisaa_tapahtuma(f"otettiin varastosta {tuote}")
-
-    def palauta_varastoon(self, tuote):
-        saldo = self.saldo(tuote.id)
-
-        self._saldot[tuote] = saldo + 1
-
-        self._kirjanpito.lisaa_tapahtuma(f"palautettiin varastoon {tuote}")
-
-        '''
-
